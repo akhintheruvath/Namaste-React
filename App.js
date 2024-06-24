@@ -8,11 +8,12 @@ const Title = () => (
    </h1>
 );
 
-// Component composition
 const Heading = () => {
    return (
       <div>
          <Title />
+         <Title></Title>
+         {Title()}
          <h1>Namaste React Functional Component</h1>
       </div>
    );
